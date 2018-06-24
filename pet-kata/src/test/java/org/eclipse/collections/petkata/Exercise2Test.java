@@ -141,7 +141,7 @@ public class Exercise2Test extends PetDomainForKata
     public void getPeopleWithoutCatsRefactor()
     {
         //use method reference, NOT lambdas, to solve the problem below
-        MutableList<Person> peopleWithoutCatsMethodRef = this.people.rejectWith(Person::hasPet, PetType.CAT);;
+        MutableList<Person> peopleWithoutCatsMethodRef = this.people.rejectWith(Person::hasPet, PetType.CAT);
         Verify.assertSize(6, peopleWithoutCatsMethodRef);
     }
 }
